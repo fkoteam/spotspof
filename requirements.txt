@@ -1,5 +1,3 @@
-flask
-flask-cors
-spotipy
-python-dotenv
-flask_httpauth
+Flask
+yt-dlp
+Flask-HTTPAuth
