@@ -1,8 +1,12 @@
-version: '3'
+version: '3.8'
+
 services:
-  app:
+  spotspof:
     build: .
     ports:
       - "5000:5000"
-    env_file:
-      - .env
+    environment:
+      - SPOTSPOF_USERNAME=miusuario
+      - SPOTSPOF_PASSWORD=micontraseña
+    volumes:
+      - /tmp/spotspof_downloads:/tmp # Opcional: Para mantener descargas si el contenedor se reinicia (aunque la app limpia)
